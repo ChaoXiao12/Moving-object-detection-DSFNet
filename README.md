@@ -72,7 +72,7 @@ Quantitative results of different models evaluated by AP@50. The model weights a
 *The overall repository style is highly borrowed from [DNANet](https://github.com/YeRen123455/Infrared-Small-Target-Detection). Thanks to Boyang Li.
 
 *The dataset is part of [VISO](https://github.com/The-Learning-And-Vision-Atelier-LAVA/VISO). Thanks to Qian Yin.
-## Referrences
+## References
 1. X. Zhou, D. Wang, and P. Krahenbuhl, "Objects as points," arXiv preprint arXiv:1904.07850, 2019.
 2. K. Simonyan and A. Zisserman, "Two-stream convolutional networks for action recognition in videos," Advances in NeurIPS, vol. 1, 2014.
 3. Bewley, Alex, et al. "Simple online and realtime tracking." 2016 IEEE international conference on image processing (ICIP). IEEE, 2016.
