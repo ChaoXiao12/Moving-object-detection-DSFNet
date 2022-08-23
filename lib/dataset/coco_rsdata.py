@@ -181,9 +181,6 @@ class COCO(data.Dataset):
             inp_i = (inp_i - self.mean) / self.std
             img[:,:,:,ii] = inp_i
 
-        #transpose
-        inp = img.transpose(2, 3, 0, 1).astype(np.float32)
-
         bbox_tol = []
         cls_id_tol = []
 
@@ -199,6 +196,9 @@ class COCO(data.Dataset):
             bbox_tol = bbox_tol.tolist()
             cls_id_tol = cls_id_tol.tolist()
             num_objs = len(bbox_tol)
+
+        #transpose
+        inp = img.transpose(2, 3, 0, 1).astype(np.float32)
 
         height, width = img.shape[0], img.shape[1]
         c = np.array([img.shape[1] / 2., img.shape[0] / 2.], dtype=np.float32)
